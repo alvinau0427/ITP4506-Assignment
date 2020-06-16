@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		
+		<!-- global styles -->
+		<link href="themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="themes/css/main.css" rel="stylesheet"/>
+		<link href="themes/css/alertbox.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+		<script src="themes/js/alertbox.js"></script>
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>				
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>
+		<!--[if lt IE 9]>			
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+        
+        <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        <script src="jquery.js"></script>
+	</head>
+    <body>		
+		<script src="header.js"></script>
+		<div id="wrapper" class="container">
+			<script src="nav.js"></script>		
+			<section class="header_text sub">
+				<img class="pageBanner" src="images/Kindle Oasis/img_banner_2_2.jpg" alt="New products">
+			</section>			
+			<section class="main-content">				
+				<div class="row">
+					<div class="span5">					
+						<h4 class="title"><span class="text"><strong>Register</strong> Form</span></h4>
+						<form action="#" method="post" class="form-stacked">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label">Campus : </label>
+									<div class="controls">
+										<select id="campus" style="width:150px;">
+											<!-- <option value="" disabled selected>Select your campus</option> -->
+											<option>Chai Wan</option>
+											<option>Haking Wong</option>
+											<option>Kwai Chung</option>
+											<option>Kwun Tong</option>
+											<option>Lee Wai Lee / HKDI</option>
+											<option>Morrison Hill</option>
+											<option>Sha Tin</option>
+											<option>Tsing Yi</option>
+											<option>Tuen Mun</option>
+										</select>									
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Student Number : </label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your student no. (e.g. 150xxxxxx)" id="studNum" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Username : </label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your username" id="username" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Password : (more than 8-digits letter and number)</label>
+									<div class="controls">
+										<input type="password" placeholder="Enter your password" id="psd" class="input-xlarge">
+                                        <meter id="passwordRange" min="0" max="100" value="0" low="40" high="75"  optimum="80"  style="width: 283px">2 out of 10 </meter>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Confirm Password : </label>
+									<div class="controls">
+										<input type="password" placeholder="Confirm your password" id="cpsd" class="input-xlarge">
+									</div>
+								</div>
+								<hr>
+								<div class="actions">
+                                    <input tabindex="9" class="btn btn-inverse large" id="register" type="button" value="Register" onclick="return false;">
+                                </div>
+							</fieldset>
+						</form>					
+					</div>		
+					<div class="span7">					
+						<h4 class="title"><span class="text"><strong>Login</strong> Form</span></h4>
+						<form action="#" method="post">
+							<input type="hidden" name="next" value="/">
+							<fieldset>
+								<div class="control-group">
+									<label class="control-label">Username : </label>
+									<div class="controls">
+										<input type="text" placeholder="Enter your username" id="lusername" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">Password : </label>
+									<div class="controls">
+										<input type="password" placeholder="Enter your password" id="lpassword" class="input-xlarge">
+									</div>
+								</div>
+								<div class="control-group">
+									<input tabindex="3" class="btn btn-inverse large" id="login" type="button" value="Sign in" onclick="return false;">
+								</div>
+							</fieldset>
+						</form>				
+					</div>			
+				</div>
+			</section>			
+			<script src="footer.js"></script>
+		</div>
+		<script src="themes/js/common.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#checkout').click(function (e) {
+					document.location.href = "checkout.html";
+				})
+			});
+		</script>
+    </body>
+</html>

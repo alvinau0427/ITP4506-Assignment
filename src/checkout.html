@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Checkout</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		
+		<!-- global styles -->
+		<link href="themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="themes/css/main.css" rel="stylesheet"/>
+        <link href="themes/css/alertbox.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+        <script src="themes/js/alertbox.js"></script>
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>				
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>
+		<!--[if lt IE 9]>			
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+		<script src="jquery.js"></script>
+	</head>
+    <body>		
+		<script src="header.js"></script>
+		<div id="wrapper" class="container">
+			<script src="nav.js"></script>		
+			<section class="header_text sub">
+			<img class="pageBanner" src="images/Kindle Oasis/img_banner_2_2.jpg" alt="New products" >
+			</section>	
+			<section class="main-content">
+				<div class="row">
+					<div class="span12">
+						<h4 class="title"><span class="text"><strong>Your</strong> Order</span></h4>
+                        <div class="accordion" id="accordion2">
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">1 ) Payment Method</a>
+								</div>
+								<div id="collapseOne" class="accordion-body in collapse">
+									<div class="accordion-inner">
+										<div class="row-fluid">
+											<div class="span12">
+												<div class="control-group">
+                                                    <p>Please choose a payment method: </p>
+                                                    <input type="radio" id="walkIn" name="method" value="walkIn" style="margin-right:1em" checked />Walk in<br />
+                                                    <input type="radio" id="amount" name="method" value="amount" style="margin-right:1em" /><span>Pay with amount</span><br />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <div class="accordion" id="accordion2">
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">2 ) Order Detail</a>
+                                </div>
+                                <div id="collapseOne" class="accordion-body in collapse">
+                                    <div class="accordion-inner">
+                                        <div class="row-fluid">
+                                            <div class="span12">
+                                                <table class="table table-striped">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Item</th>
+                                                            <th>Image</th>
+                                                            <th>Product Name</th>
+                                                            <th>Quantity</th>
+                                                            <th>Total</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    </tbody>
+                                                </table>
+                                                <div id="showBonus"><div style="width:220px;float:right;"><input type="checkbox" id="bonus" style="margin-right:1em" />Use Bonus Point</div><br /><br /></div>
+                                                <div id="show"><div style="width:223px;float:right"><p id="method"></p></div><br /><br /></div>
+                                                <div style="width:174px;float:right"><p class="cart-total"></p></div><br /><br />
+                                                <div id="showRemainder"><div style="width:210px;float:right"><p id="remainder"></p></div><br /><br /></div>
+                                                <div style="width:285px;float:right"><p id="bonusPoint"></p></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+				</div>
+				<div class="row">
+					<div class="span12">
+						<div class="accordion" id="accordion2">
+							<div class="accordion-group">
+								<div class="accordion-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">3 ) Account &amp; Billing Details</a>
+								</div>
+								<div id="collapseOne" class="accordion-body in collapse">
+									<div class="accordion-inner">
+										<div class="row-fluid">
+											<div class="span12">
+												<div class="control-group">
+													<label class="control-label">Student Number</label>
+													<div class="controls">
+														<input type="text" id="studNum" placeholder="" class="input-xlarge">
+													</div>
+												</div>
+												<div class="control-group">
+													<label class="control-label">Name</label>
+													<div class="controls">
+														<input type="text" id="name" placeholder="" class="input-xlarge">
+													</div>
+												</div>
+                                                <div class="control-group">
+                                                    <label class="control-label">Take Out Place</label>
+                                                    <div class="controls">
+                                                        <select id="campus" style="width:150px;">
+                                                            <option>Chai Wan</option>
+                                                            <option>Haking Wong</option>
+                                                            <option>Kwai Chung</option>
+                                                            <option>Kwun Tong</option>
+                                                            <option>Lee Wai Lee / HKDI</option>
+                                                            <option>Morrison Hill</option>
+                                                            <option>Sha Tin</option>
+                                                            <option>Tsing Yi</option>
+                                                            <option>Tuen Mun</option>
+                                                        </select>									
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label class="control-label">Please choose one bank for your payment</label>
+                                                    <ul>
+                                                        <li>Bank of China: 012-353-2-3456786</li>
+                                                        <li>Standard Chartered Bank: 14335234654534</li>
+                                                        <li>HSBC: 234-346286-001</li>
+                                                    </ul>
+												</div>
+<!--
+                                                <div class="control-group">
+                                                    <label for="textarea" class="control-label">Comments</label>
+                                                    <div class="controls">
+                                                        <textarea rows="3" id="textarea" class="span12"></textarea>
+                                                    </div>
+                                                </div>									
+-->                                        
+                                                <br />
+                                                <input type="button" class="btn btn-inverse" id="confirm" value="Confirm order" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>
+			</section>			
+			<script src="footer.js"></script>
+		</div>
+		<script src="themes/js/common.js"></script>
+        <script>
+            document.getElementById("studNum").value = sessionStorage.getItem("studNum");
+            document.getElementById("name").value = sessionStorage.getItem("username").toUpperCase();
+            for (i = 0; i < document.getElementById("campus").options.length; i++) {
+                if (document.getElementById("campus").options[i].text == sessionStorage.getItem("campus")) {
+                    document.getElementById("campus").options.selectedIndex = i;
+                }
+            }
+		</script>
+        <script>
+			$(document).ready(function() {
+                if (sessionStorage.getItem("username") == null) {
+                    $("#amount").attr("disabled",true);
+                    $("#amount").next().html("Pay with amount (For Member)");
+                } else {
+                    $("#amount").attr("disabled",false);
+                    $("#amount").next().html("Pay with amount");
+                }
+                $("#showBonus").hide();
+                $("#show").hide();
+                $("#showRemainder").hide();
+                $("#walkIn, #amount").on("change", function () {
+                    if ($(this).val() == "amount") {
+                        $("#bonus").attr("checked", false);
+                        $("#showBonus").show();
+                        $("#show").show();
+                        $("#showRemainder").show();
+                        var orderedItem = JSON.parse(sessionStorage.getItem("orderedItem"));
+                        var total = 0;
+                        for (i = 0; i < orderedItem.length; i++) {
+                            total += parseInt(orderedItem[i].qty) * parseFloat(orderedItem[i].price);
+                        }
+                        sessionStorage.setItem("total", total);
+                        $("#point").html(sessionStorage.getItem("bonusPoint"));
+                        $("#remainder").html("<strong style='margin-right:1em'>Remainder:</strong>HK$" + (sessionStorage.getItem("amount") - total));
+                        $("#method").html("<strong style='margin-right:1em'>Your Amount:</strong>HK$" + sessionStorage.getItem("amount"));
+                        sessionStorage.setItem("method", "amount");
+                    } else {
+                        $("#method").html("");
+                        $("#showBonus").hide();
+                        $("#show").hide();
+                        $("#showRemainder").hide();
+                        sessionStorage.setItem("method", "walkIn");
+                    }
+                });
+                
+                var orderedItem = JSON.parse(sessionStorage.getItem("orderedItem"));
+				var total = 0;
+				$("tbody").html("");
+				for (i = 0; i < orderedItem.length; i++) {
+					$("tbody").append("<tr>");
+					$("tr:last").append("<td>" + (i + 1) + "</td>");
+					$("tr:last").append("<td><a><img style='width:100px;height:100px;' alt='' src='" + orderedItem[i].image + "'></a></td>");
+					$("tr:last").append("<td>" + orderedItem[i].name + "</td>");
+					$("tr:last").append("<td>" + orderedItem[i].qty + "</td>");
+					$("tr:last").append("<td style='width:100px'>HK$" + (parseInt(orderedItem[i].qty) * parseFloat(orderedItem[i].price)) + "</td>");
+					
+					total += parseInt(orderedItem[i].qty) * parseFloat(orderedItem[i].price);
+				}
+                sessionStorage.setItem("total", total);
+                sessionStorage.setItem("hasPoint", parseInt(total * 0.1));
+				$("p.cart-total").html("<strong style='margin-right:1em'>Total:</strong>HK$" + total + "<br />");
+                $("#bonusPoint").html("<strong style='margin-right:1em'>Bonus Point (available):</strong>" + parseInt(total * 0.1) + "<br />");
+                
+                $("#bonus").on("click", function() {
+                    if ($(this)[0].checked) {
+                        if (total > parseFloat(sessionStorage.getItem("bonusPoint"))) {
+                            $("#remainder").html("<strong style='margin-right:1em'>Remainder:</strong>HK$" + (sessionStorage.getItem("amount") - total - sessionStorage.getItem("bonusPoint")));
+                            sessionStorage.setItem("total", total - sessionStorage.getItem("bonusPoint"));
+                            sessionStorage.setItem("usePoint", sessionStorage.getItem("bonusPoint"));
+                        } else {
+                            $("#remainder").html("<strong style='margin-right:1em'>Remainder:</strong>HK$" + sessionStorage.getItem("amount") + " (-" + (sessionStorage.getItem("bonusPoint") - (sessionStorage.getItem("amount") - total) + " bp)"));
+                            sessionStorage.setItem("total", 0);
+                            sessionStorage.setItem("usePoint", (sessionStorage.getItem("bonusPoint") - (sessionStorage.getItem("amount") - total)));
+                        }
+                    } else {
+                        $("#remainder").html("<strong style='margin-right:1em'>Remainder:</strong>HK$" + (sessionStorage.getItem("amount") - total));
+                        sessionStorage.removeItem("usePoint");
+                        sessionStorage.setItem("total", total);
+                    }
+                });
+			});
+        </script>
+    </body>
+</html>
